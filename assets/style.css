@@ -36,3 +36,32 @@ footer .company-contact a{color:#e1e7f0}
 .contact-info .notice p{font-size:14px}
 @media(max-width:1100px){header{gap:16px}.official-logo{width:70px}.official-brand{font-size:20px;gap:9px}}
 @media(max-width:540px){.official-logo{width:62px}.official-brand{font-size:18px;gap:8px}.official-brand small{font-size:8px;letter-spacing:.09em}footer .official-brand{font-size:21px}.company-contact p{font-size:13px}}
+
+/* Constrain the official logo independently of its HTML image dimensions. */
+header .brand, footer .official-brand {
+  display:flex; align-items:center; gap:10px; min-width:0;
+}
+header .brand { flex:0 1 auto; }
+header .brand > img, footer .brand > img, img.official-logo {
+  display:block !important;
+  width:72px !important;
+  height:41px !important;
+  min-width:0 !important;
+  max-width:72px !important;
+  max-height:41px !important;
+  flex:0 0 72px !important;
+  object-fit:contain;
+  margin:0;
+}
+header .brand > span, footer .official-brand > span { min-width:0; }
+header .menu-button { flex-shrink:0; }
+@media (max-width:540px) {
+  header .brand > img, footer .brand > img, img.official-logo {
+    width:54px !important;
+    height:31px !important;
+    max-width:54px !important;
+    max-height:31px !important;
+    flex-basis:54px !important;
+  }
+  header .brand { gap:8px; font-size:18px; }
+}
