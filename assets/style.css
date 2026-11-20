@@ -22,3 +22,17 @@
 @media(max-width:820px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.product-art img{height:140px}.detail-art img.real-product{width:100%;height:auto;max-height:430px}.archive-grid{gap:12px}.archive-grid a{padding:9px}.subcategory-label{flex-wrap:wrap}.detail-top h1{font-size:30px}.detail-sections .button{max-width:100%;gap:12px}}
 .archive-photo-band{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding-bottom:80px}.archive-photo-band img{width:100%;height:auto}.archive-photo-band p{font-size:14px}@media(max-width:650px){.archive-photo-band{grid-template-columns:1fr;gap:25px;padding-bottom:50px}}
+
+/* Official identity and verified contact information, 2026-11-20. */
+.official-brand{gap:12px;letter-spacing:-.055em;font-family:Arial,'Malgun Gothic',sans-serif}
+.official-logo{display:block;width:86px;height:auto;flex-shrink:0;background:#fff;border-radius:4px}
+.official-brand>span{display:block}.official-brand small{letter-spacing:.12em}
+footer .official-brand{display:flex;font-size:22px;white-space:normal}
+.company-contact p{margin:14px 0 0;font-size:14px;line-height:1.85}
+.company-contact a{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+footer .company-contact a{color:#e1e7f0}
+.contact-info{min-width:0}.contact-info .company-contact{padding:4px 0 24px}
+.contact-info .company-contact p{font-size:16px}.contact-info .company-contact a{color:var(--navy)}
+.contact-info .notice p{font-size:14px}
+@media(max-width:1100px){header{gap:16px}.official-logo{width:70px}.official-brand{font-size:20px;gap:9px}}
+@media(max-width:540px){.official-logo{width:62px}.official-brand{font-size:18px;gap:8px}.official-brand small{font-size:8px;letter-spacing:.09em}footer .official-brand{font-size:21px}.company-contact p{font-size:13px}}
